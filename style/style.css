@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #FFF9CA;
+    background-image: linear-gradient(to right,#B2A4FF,#FFB4B4);
+    width: 100%;
+}
+.contenu {
+    width: 80%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+table {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+
+}
+h1 {
+    padding: 40px 0 20px;
+}
+p {
+    color: red;
+    padding: 20px 0;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border: #16213E 1px solid;
+}
+thead {
+    border: 1px solid #533483;
+    background-color: #898AA6;
+    text-align: center;
+    padding: 8px;
+}
+tbody {
+    border: 1px solid #533483;
+    background-color: #C9BBCF;
+    text-align: center;
+    padding: 8px;
+} 
+.input {
+    width: 60%;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+label {
+    display: inline-block;
+    padding: 20px 20px 20px 0;
+}
+select {
+    width: 30%;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    text-align: center;
+    padding: 8px;
+}
+.promotion {
+    display: flex;
+    gap: 20px;
+}
+.ajouter {
+    padding: 12px 50px;
+    border-radius: 15px;
+    font-size: large;
+    color: #FFF9CA;
+    background-color: #810955;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.ajouter:hover {
+    color:#810955;
+    background-color:#FFF9CA;
+    border: none;
+    outline: none;
+} 
+.modifier {
+    padding: 12px 50px;
+    border-radius: 15px;
+    font-size: large;
+    color: #FFF9CA;
+    background-color: #B270A2;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.modifier:hover {
+    color:#B270A2;
+    background-color:#FFF9CA;
+    border: none;
+    outline: none;
+} 
+.modifier {
+    display: none;
+}
+#modifi_table {
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-size: large;
+    color: #FFF9CA;
+    background-color: #B270A2;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+#modifi_table:hover {
+    color:#B270A2;
+    background-color:#FFF9CA;
+    border: none;
+    outline: none;
+} 
+#suprimi_table {
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-size: large;
+    color: #FFF9CA;
+    background-color: #7A4069;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+#suprimi_table:hover {
+    color:#7A4069;
+    background-color:#FFF9CA;
+    border: none;
+    outline: none;
+} 
+#Oui , #Non {
+    margin-right: 20px;
+}
