@@ -1,4 +1,3 @@
-
 const arrdata = [];
 const arrvalidation = [];
 
@@ -103,7 +102,6 @@ if(sepromotion[0].checked === false && sepromotion[1].checked == false ){
 
 }
 
-
 // function push les information dons un array
 
 function draw(){
@@ -118,7 +116,7 @@ for(i=0 ; i<arrdata.length ; i++) {
     <td>${arrdata[i].promotion}</td>
     <td>
         <button onclick='modifier(${i})' id="modifi_table">modifier</button>
-        <button onclick='suprimi(${i})' id="suprimi_table">suprimi</button>
+        <button onclick='suprimi(${i})' id="suprimi_table">supprimer</button>
     </td>`
 }
 }
@@ -140,6 +138,7 @@ function vide(){
 ajouter.onclick =function(e){
     e.preventDefault();
 
+    // document.getElementById('table').style='display:block'
     if(validation()){
     arrdata.push( {
         nom:LaNom.value, Marque:LaMarque.value, 
@@ -155,12 +154,10 @@ ajouter.onclick =function(e){
 
 // function suprimi 
 
-function suprimi(index){
+function suprimi(){
 
-    if(confirm("Eter-vous sur de vouloir supprimer ces informations")){
-        arrdata.splice(index , 1)
-        draw();
-    }
+    document.getElementById('conten-pup').style='display:inline-block'
+    document.getElementById("contenu").style.filter="blur(5px)"
 
 }
 
@@ -192,5 +189,21 @@ function submitModifier(index){
     vide()
 }
 
+//pup
 
+// button supprimier
+function supprimerrr(index) {
 
+    arrdata.splice(index , 1)
+    draw()
+    document.getElementById('conten-pup').style=' display: none';
+    document.getElementById("contenu").style.filter="blur(0)"
+}
+
+// button anuule
+
+function annule() {
+    document.getElementById('conten-pup').style=' display: none';
+    document.getElementById("contenu").style.filter="blur(0)"
+
+}
