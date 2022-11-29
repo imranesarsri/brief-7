@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +8,7 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <div class="contenu">
+    <div class="contenu" id="contenu">
         <h1>Creat Read Updete Delete</h1>
         <form action="">
             <div>
@@ -40,7 +33,7 @@
             </div>
                 <label>type :</label><br>
                 <select id="Latype">
-                    <option selected disabled value="choisir-liste">Veuillez choisir dans la liste</option>
+                    <option selected disabled value="choisir-liste">~~Veuillez choisir dans la liste~~~</option>
                     <option value=" hygiène et toilette">hygiène et toilette</option>
                     <option value=" soins esthétiques"> soins esthétiques</option>
                     <option value=" produits solaires">produits solaires</option>
@@ -60,6 +53,14 @@
         </form>
         <button id="modifier" class="modifier" onclick="submitModifier()">modifier</button>
     </div>
+
+    <div class="conten-pup" id="conten-pup">
+        <h2>SUPPRIMER</h2>
+        <p class="parg-pup">Etre-vous sur de vouloir supprimer ces informations</p>
+        <button class="pup-supprimer" id="pup-supprimer" onclick="supprimerrr()">supprimer</button>
+        <button class="pup-annule" id="pup-annule" onclick="annule()">annule</button>
+    </div>
+
     <table>
         <thead>
             <tr>
